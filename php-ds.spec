@@ -4,7 +4,7 @@
 #
 Name     : php-ds
 Version  : 1.2.9
-Release  : 2
+Release  : 3
 URL      : https://pecl.php.net//get/ds-1.2.9.tgz
 Source0  : https://pecl.php.net//get/ds-1.2.9.tgz
 Summary  : No detailed summary available
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : MIT
 Requires: php-ds-lib = %{version}-%{release}
 BuildRequires : buildreq-php
+BuildRequires : pcre2-dev
 
 %description
 No detailed description available
@@ -26,6 +27,7 @@ lib components for the php-ds package.
 
 %prep
 %setup -q -n ds-1.2.9
+cd %{_builddir}/ds-1.2.9
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -44,4 +46,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20180731/ds.so
+/usr/lib64/extensions/no-debug-non-zts-20190902/ds.so
