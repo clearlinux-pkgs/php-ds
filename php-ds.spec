@@ -4,7 +4,7 @@
 #
 Name     : php-ds
 Version  : 1.2.9
-Release  : 5
+Release  : 6
 URL      : https://pecl.php.net//get/ds-1.2.9.tgz
 Source0  : https://pecl.php.net//get/ds-1.2.9.tgz
 Summary  : No detailed summary available
