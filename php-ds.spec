@@ -6,18 +6,16 @@
 # autospec commit: c1050fe
 #
 Name     : php-ds
-Version  : 1.4.0
-Release  : 50
-URL      : https://pecl.php.net/get/ds-1.4.0.tgz
-Source0  : https://pecl.php.net/get/ds-1.4.0.tgz
+Version  : 1.5.0
+Release  : 51
+URL      : https://pecl.php.net/get/ds-1.5.0.tgz
+Source0  : https://pecl.php.net/get/ds-1.5.0.tgz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
 Requires: php-ds-lib = %{version}-%{release}
 Requires: php-ds-license = %{version}-%{release}
 BuildRequires : buildreq-php
-BuildRequires : pcre2-dev
-BuildRequires : perl(Getopt::Long)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -43,10 +41,10 @@ license components for the php-ds package.
 
 
 %prep
-%setup -q -n ds-1.4.0
-cd %{_builddir}/ds-1.4.0
+%setup -q -n ds-1.5.0
+cd %{_builddir}/ds-1.5.0
 pushd ..
-cp -a ds-1.4.0 buildavx2
+cp -a ds-1.5.0 buildavx2
 popd
 
 %build
