@@ -7,7 +7,7 @@
 #
 Name     : php-ds
 Version  : 1.5.0
-Release  : 75
+Release  : 76
 URL      : https://pecl.php.net/get/ds-1.5.0.tgz
 Source0  : https://pecl.php.net/get/ds-1.5.0.tgz
 Summary  : No detailed summary available
